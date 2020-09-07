@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body onload="classChange()">
+      <form method="GET" action="time.html">
+        <input type="text" hidden name="c" id="c">
+        <select name="y">
+          <option value=1>1</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+     
+        </select>
+
+        <select name="f" onchange="classChange()" id="f">
+          <option value=cs>B.Sc. Computer Science</option>
+          <option value=bca>BCA</option>
+          <option value=bba>BBA</option>
+          <option value=bcom>B. Com</option>
+          <option value=eco>B.A. Economics</option>
+          <option value=ft>B.Sc. Food Technology</option>
+          <option value=mb>B.Sc. Microbiology</option>
+          <option value=bt>B.Sc. Biotechnology</option>
+          <option value=eng>B.A. English</option>
+          <option value=if>B.A. Islamic Finance</option>          
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+      
+
+      <script>
+        function classChange(){
+          switch(document.getElementById('f').value){
+            case 'cs' : document.getElementById('c').value = "B.Sc.CS";break;
+            case 'bca' : document.getElementById('c').value = "BCA";break;
+            case 'bba' : document.getElementById('c').value = "BBA";break;
+            case 'bcom' : document.getElementById('c').value = "B.Com";break;
+            case 'eco' : document.getElementById('c').value = "B.A.Economics";break;
+            case 'ft' : document.getElementById('c').value = "B.Sc.FT";break;
+            case 'mb' : document.getElementById('c').value = "B.Sc.Microbiology";break;
+            case 'bt' : document.getElementById('c').value = "B.Sc.Biotechnology";break;
+            case 'eng' : document.getElementById('c').value = "B.A.English";break;
+            case 'if' : document.getElementById('c').value = "B.A.IF";break;
+          }
+        }
+      </script>
+ 
+    </body>
+</html>
