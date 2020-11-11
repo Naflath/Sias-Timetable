@@ -4,17 +4,94 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
-    <body onload="classChange()">
+    <center>
+      <h1>welcome to sias</h1>
+      <h4>"Time is non-refundable, use it with intention"</h4>
+      <style type="text/css">
+       body{
+        background-image: url(../project/safi1.jpeg);
+        width: 100%; 
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size: cover;
+      } 
+      h1 {
+        color: rgb(255, 255, 255);
+        text-align : center;
+        margin: 10%;
+        font-family: roman;
+        font-weight: bold;
+        font-size: 60px;
+        text-transform: capitalize;
+      }
+        h4 {
+          color:#FF9A35;
+          margin: 2%;
+          font-family: initial;
+          font-weight: bold;
+          text-transform: capitalize;
+          font-size: 24px;
+          font-style: italic;
+         }
+        .year{
+        padding: 8px 12px;
+        color: white;
+        background-color:black;
+        border:1px;
+        border-radius: 10px;
+        cursor: pointer;
+        padding-right: 30px;
+        border-top: 2px white solid;
+        border-left: 2px whitesmoke solid;
+        text-transform: uppercase;
+      }
+      #f{
+        padding: 8px 12px;
+        color: white;
+        background-color:black;
+        border:1px;
+        border-radius: 10px;
+        cursor: pointer;
+        padding-right: 10px;
+        border-top: 2px white solid;
+        border-left: 2px whitesmoke solid;
+      }
+   .button{
+      position: relative;
+      text-align: center;
+      background-color: black;
+      padding: 10px;
+      font-size: 11px;
+      color: white;
+      font-family: poppins;
+      font-weight: 200;
+      border-top: 2px white solid;
+      border-left: 2px whitesmoke solid;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      cursor:pointer;
+      border-radius: 200px;
+      transition: 1.5px;
+      margin: 10px;
+      
+
+     }
+      }
+        </style>
+    <body onload="classChange()", display="flex",textalign="center">
       <form method="GET" action="time.html">
         <input type="text" hidden name="c" id="c">
-        <select name="y">
+        <select name="y" class="year">
           <option value=1>1</option>
           <option value=2>2</option>
           <option value=3>3</option>
-     
+         
         </select>
-
         <select name="f" onchange="classChange()" id="f">
+          
           <option value=cs>B.Sc. Computer Science</option>
           <option value=bca>BCA</option>
           <option value=bba>BBA</option>
@@ -32,8 +109,10 @@
             <option value=mis>M.A. Islamic Studies</option>
             <option value=mcom>M.Com</option>        
         </select>
-
-        <button type="submit">Submit</button>
+        </div>
+        <button type="submit"
+          class="button">Submit
+        </button>
       </form>
       
 
@@ -50,15 +129,14 @@
             case 'bt' : document.getElementById('c').value = "B.Sc.Biotechnology";break;
             case 'eng' : document.getElementById('c').value = "B.A.English";break;
             case 'if' : document.getElementById('c').value = "B.A.IF";break;
-            case 'mbt' : document.getElementById('c').value = "M.Sc. Biotechnology";break;
-            case 'mmb' : document.getElementById('c').value = "M.Sc. Microbiology";break;
-            case 'mft' : document.getElementById('c').value = "M.Sc. Food Technology";break;
-            case 'mcj' : document.getElementById('c').value = "M.A Journalism & Mass Communication";break;
-            case 'mis' : document.getElementById('c').value = "M.A. Islamic Studies";break;
+            case 'mbt' : document.getElementById('c').value = "M.Sc.Biotechnology";break;
+            case 'mmb' : document.getElementById('c').value = "M.Sc.Microbiology";break;
+            case 'mft' : document.getElementById('c').value = "M.Sc.Food Technology";break;
+            case 'mcj' : document.getElementById('c').value = "M.A.Journalism & Mass Communication";break;
+            case 'mis' : document.getElementById('c').value = "M.A.IslamicStudies";break;
             case 'mcom' : document.getElementById('c').value = "M.Com";break;
           }
         }
       </script>
- 
     </body>
 </html>
